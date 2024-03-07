@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Lab 9a: DOM Events</title>
+</head>
+<body>
+    <h2>DOM Events</h2>
+    <button id="btn">Click me</button>
+    <p id="output"></p>
+
+    <script>
+        // Get the button and output element
+        const btn = document.getElementById('btn');
+        const output = document.getElementById('output');
+
+        // Add event listener for 'click' event
+        btn.addEventListener('click', function() {
+            output.textContent = 'Button clicked!';
+        });
+    </script>
+</body>
+</html>
